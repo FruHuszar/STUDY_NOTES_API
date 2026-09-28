@@ -1,0 +1,15 @@
+# Cloudflare Worker configuration. Private values are filled in by GitHub Actions.
+name = "study-notes-api"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "study-notes"
+database_id = "DATABASE_ID_FROM_SECRET"
+migrations_dir = "migrations"
+
+[observability]
+enabled = true
